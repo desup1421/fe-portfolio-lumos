@@ -18,8 +18,6 @@
 
 body {
 	background-color: #0b0c10;
-}
-h1, h2, h3, p,label {
 	color: var(--text-light-primary);
 }
 
@@ -27,6 +25,7 @@ h2 {
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
+
 .container {
   max-width: max(900px, 80%);
   min-height: 100lvh;
@@ -35,18 +34,15 @@ h2 {
   overflow: hidden;
 }
 
+/* ============================NAVIGATION BAR============================ */
 .navbar {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 	padding: 5px 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 	box-shadow: 0 1px 10px var(--accent-color);
-
-}
-span {
-	color: white;
 }
 
 .nav-logo img {
@@ -68,16 +64,32 @@ span {
   font-weight: bold;
 }
 
+.nav-lists li a:hover {
+  color: var(--accent-color);
+}
+
+/* ===============================MAIN================================ */
+
 .main {
   width: 100%;
 	margin: 30px 0;
-	padding: 20px;
+	padding: 60px 20px 20px 20px;
 }
 
 .project-section {
 	width: 100%;
 }
 
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.highlight {
+	font-weight: bold;
+	color: var(--accent-color);
+}
+/*==============================CARDS=================================*/
 .cards{
 	width: 100%;
 	display: grid;
@@ -106,26 +118,6 @@ span {
 	color: var(--bg-dark-secondary);
 	padding: 10px;
 }
-
-.btn:active {
-	color: scale(0.9);
-}
-
-.btn:hover {
-	transform: scale(1.1);
-}
-.btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	border-radius: 10px;
-	margin: 20px;
-	background-color: var(--bg-dark-primary);
-	color: #66fcf1;
-	text-decoration: none;
-}
-
 .cards-review {
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -144,6 +136,30 @@ span {
 	color: black;
 }
 
+/* ===============================BUTTONS============================*/
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px;
+	background-color: var(--bg-dark-primary);
+	color: #66fcf1;
+	text-decoration: none;
+	border: none;
+}
+
+.btn:hover {
+	transform: scale(0.9);
+}
+
+.btn:active {
+	color: scale(0.9);
+}
+
+/* ==============================CONTACT & FORM=========================*/
 .contact-info {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -154,6 +170,7 @@ span {
 	width: 100%;
 	padding: 10px;
 	background-color: var(--bg-light-primary);
+	margin: 20px 0;
 }
 
 .contact-info form input,
@@ -173,7 +190,9 @@ form label {
 	color: var(--text-dark-primary);
 	margin: 10px 0;
 }
-
+.social-media h3 {
+	margin: 20px 0;
+}
 .contact-icons {
 	list-style: none;
 	padding: 0;
@@ -196,7 +215,7 @@ form label {
 	color: var(--accent-color);
 }
 
-
+/* =============================FOOTER================================ */
 .footer {
   height: 50px;
   width: 100%;
@@ -204,17 +223,15 @@ form label {
 	border-top: 1px solid var(--accent-color);
 }
 
-.flex-center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
 @media screen and (max-width: 650px) {
 	.cards {
 		grid-template-columns: 1fr;
 	}
 	.cards-review {
+		grid-template-columns: 1fr;
+	}
+	.contact-info {
 		grid-template-columns: 1fr;
 	}
 }

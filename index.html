@@ -25,24 +25,27 @@
   </head>
   <body class="flex-center">
     <div class="container">
+      <!-- NAVIGATION BAR -->
       <nav class="navbar">
+        <!-- LOGO -->
         <div class="nav-logo flex-center">
           <a href="#">
             <img src="./assets/img/logo.png" alt="Logo" />
           </a>
         </div>
+        <!-- NAVIGATION LINKS -->
         <ul class="nav-lists">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimony">Testimony</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <main class="main">
         <!-- HERO SECTION -->
-        <header class="hero-section">
-          <p>Hi, I'm Dede Supritana</p>
+        <header id="home" class="hero-section">
+          <p>Hi, I'm <span class="highlight">Dede Supritana</span></p>
           <h1>A Frontend Web Developer</h1>
           <p>
             I'm a freshgraduate from Padjadjaran University who interested to be
@@ -53,7 +56,7 @@
         </header>
 
         <!-- PROJETS LIST -->
-        <section class="project-section">
+        <section id="projects" class="project-section">
           <!-- HEADER -->
           <header>
             <h2>Projects</h2>
@@ -62,9 +65,13 @@
 
           <!-- CARDS -->
           <div class="cards">
+            <!-- CARD 1 -->
             <div class="card">
               <div class="card-img">
-                <img src="./assets/img/cover.png" alt="personal portfolio image" />
+                <img
+                  src="./assets/img/cover.png"
+                  alt="personal portfolio image"
+                />
               </div>
               <h3 class="card-title">Personal Portfolio</h3>
               <p class="card-desc">
@@ -73,24 +80,44 @@
                 highlight my web development skills and provide an overview of
                 my experience and expertise to potential clients or employers.
               </p>
-              <a href="https://dedesupriatna.netlify.app/" class="btn" target="_blank">Go To Project</a>
+              <a
+                href="https://dedesupriatna.netlify.app/"
+                class="btn"
+                target="_blank"
+                >Go To Project</a
+              >
             </div>
+
+            <!-- CARD 2 -->
             <div class="card">
               <div class="card-img">
-                <img src="./assets/img/lomoshive.PNG" alt="company profile image" />
+                <img
+                  src="./assets/img/lomoshive.PNG"
+                  alt="company profile image"
+                />
               </div>
               <h3 class="card-title">Company Profile</h3>
               <p class="card-desc">
                 This is a project for a company called Lomoshive. I made this as
-                part of my course in Lumoshive Academy.
+                part of my course at Lumoshive Academy. This project is a
+                practice to understand slicing and styling using CSS and
+                Bootstrap.
               </p>
-              <a href="https://fe-practice-three.vercel.app/" class="btn"
-                 target="_blank">Go To Project</a
+              <a
+                href="https://fe-practice-three.vercel.app/"
+                class="btn"
+                target="_blank"
+                >Go To Project</a
               >
             </div>
+
+            <!-- CARD 3 -->
             <div class="card">
               <div class="card-img">
-                <img src="./assets/img/tribute-pages.png" alt="tribute page image" />
+                <img
+                  src="./assets/img/tribute-pages.png"
+                  alt="tribute page image"
+                />
               </div>
               <h3 class="card-title">Tribute Page</h3>
               <p class="card-desc">
@@ -100,15 +127,22 @@
                 life and contributions. This project is designed to practice
                 basic HTML and CSS skills.
               </p>
-              <a href="https://desup1421.github.io/tribute-page/" class="btn" target="_blank">Go To Project</a>
+              <a
+                href="https://desup1421.github.io/tribute-page/"
+                class="btn"
+                target="_blank"
+                >Go To Project</a
+              >
             </div>
           </div>
         </section>
 
         <!-- USER REVIEW -->
-        <section class="users-review">
+        <section id="testimony" class="users-review">
           <h2>Testimony</h2>
+          <!-- CARDS -->
           <div class="cards cards-review">
+            <!-- CARD 1 -->
             <div class="card">
               <div class="stars flex-center">
                 <i class="bx bxs-star"></i>
@@ -131,6 +165,8 @@
                 <p>John Doe</p>
               </div>
             </div>
+
+            <!-- CARD 2 -->
             <div class="card">
               <div class="stars flex-center">
                 <i class="bx bxs-star"></i>
@@ -153,6 +189,8 @@
                 <p>John Doe</p>
               </div>
             </div>
+
+            <!-- CARD 3 -->
             <div class="card">
               <div class="stars flex-center">
                 <i class="bx bxs-star"></i>
@@ -175,6 +213,8 @@
                 <p>John Doe</p>
               </div>
             </div>
+
+            <!-- CARD 4 -->
             <div class="card">
               <div class="stars flex-center">
                 <i class="bx bxs-star"></i>
@@ -201,12 +241,18 @@
         </section>
 
         <!-- CONTACT ME -->
-        <section class="contact-section">
+        <section id="contact" class="contact-section">
+          <!-- HEADER -->
           <header>
             <h2>Contact Me</h2>
-            <p>I will happy to hear something from you.</p>
+            <p>
+              Feel free to contact me to discuss about some project or just say hi.
+            </p>
           </header>
+
+          <!-- CONTACT INFO -->
           <div class="contact-info">
+            <!-- FORM -->
             <form action="" class="form card">
               <div>
                 <label class="form-label" for="name">Name</label>
@@ -224,6 +270,8 @@
                 <button class="btn" type="submit">Submit</button>
               </div>
             </form>
+
+            <!-- SOCIAL MEDIA -->
             <div class="social-media">
               <h3>Social media</h3>
               <ul class="contact-icons">
