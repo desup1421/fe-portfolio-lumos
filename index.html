@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META TAGS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dede Supriatna" />
+    <meta
+      name="description"
+      content="Dede Supriatna's portfolio, a frontend developer who is learning SEO, JavaScript, ReactJs, and more."
+    />
+    <meta name="keywords" content="dede, supriatna, frontend, developer" />
+
+    <!-- META OPEN GRAPH -->
+    <meta property="og:title" content="Dede Supriatna" />
+    
+    <meta
+      property="og:description"
+      content="Dede Supriatna's portfolio, a frontend developer who is learning SEO, JavaScript, ReactJs, and more."
+    />
+    <meta
+      property="og:image"
+      content="https://dedesupriatna.online/assets/img/logo.png/"
+    />
+    <meta property="og:url" content="https://dedesupriatna.online/" />
+
+    <!-- META TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dede Supriatna" />
+    <meta
+      name="twitter:description"
+      content="Dede Supriatna's portfolio, a frontend developer who is learning SEO, JavaScript, ReactJs, and more."
+    />
+    <meta name="twitter:image" content="https://dedesupriatna.online/assets/img/logo.png/" />
+
+    <!-- TITLE, CSS, ICON -->
     <title>Dede Supriatna</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       rel="shortcut icon"
-      href="./assets/img/favicon.ico"
+      href="/assets/img/favicon.ico"
       type="image/x-icon"
     />
 
-    <!-- Google Fonts -->
+    <!-- GOGGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
 
-    <!-- Boxicon -->
+    <!-- BOXICON -->`
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
@@ -30,19 +61,23 @@
         <!-- LOGO -->
         <div class="nav-logo flex-center">
           <a href="#">
-            <img src="./assets/img/logo.png" alt="Logo" />
+            <img src="/assets/img/logo.png" alt="Logo" />
           </a>
+          <!-- MENU ICON -->
+          <i id="menu-icon" class="bx bx-menu"></i>
         </div>
         <!-- NAVIGATION LINKS -->
-        <ul class="nav-lists">
-          <li><a href="#">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#testimony">Testimony</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul id="nav-lists" class="nav-lists">
+          <div class="flex-center nav-list-centering">
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimony">Testimony</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
         </ul>
       </nav>
 
-			<!-- MAIN SECTION -->
+      <!-- MAIN SECTION -->
       <main class="main">
         <!-- HERO SECTION -->
         <header id="home" class="hero-section">
@@ -247,14 +282,15 @@
           <header>
             <h2>Contact Me</h2>
             <p>
-              Feel free to contact me to discuss about some project or just say hi.
+              Feel free to contact me to discuss about some project or just say
+              hi.
             </p>
           </header>
 
           <!-- CONTACT INFO -->
           <div class="contact-info">
             <!-- FORM -->
-            <form action="" class="form card">
+            <form id="contact-form" class="form card">
               <div>
                 <label class="form-label" for="name">Name</label>
                 <input type="text" id="name" />
@@ -268,7 +304,13 @@
                 <textarea name="message" id="message"></textarea>
               </div>
               <div class="flex-center">
-                <button class="btn" type="submit">Submit</button>
+                <button id="form-btn" class="btn" type="submit">
+                  <span id="form-btn-text">Submit</span>
+                  <i
+                    id="form-loader"
+                    class="bx bx-loader bx-spin display-none"
+                  ></i>
+                </button>
               </div>
             </form>
 
@@ -302,8 +344,14 @@
         </section>
       </main>
 
-			<!-- FOOTER -->
+      <!-- FOOTER -->
       <footer class="footer flex-center">Made by me</footer>
+
+      <!-- SWEETALERT -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <!-- JAVASCRIPT -->
+      <script src="/assets/js/script.js"></script>
     </div>
   </body>
 </html>
